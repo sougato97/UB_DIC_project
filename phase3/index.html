@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<!-- <html lang="en"> -->
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <title>product recommendation</title>
+  <meta name="title" content="product recommendation engine" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" type="text/css" href="main.css" />
+</head>
+
+<body>
+  <div class="main-panel">
+    <table style="
+        width: 100%;
+        max-width: 800px;
+        border: 0px;
+        border-spacing: 0px;
+        border-collapse: separate;
+        margin-right: auto;
+        margin-left: auto;
+      ">
+      <tbody>
+        <tr style="padding: 0px">
+          <td style="padding: 0px">
+        <tr style="padding: 0px">
+          <td style="padding: 2.5%; width: 63%; vertical-align: middle">
+            <p style="text-align: center">
+              <name>Market Basket Analysis</name>
+            </p>
+          </td>
+        </tr>
+        </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table style="
+        width: 100%;
+        border: 0px;
+        border-spacing: 0px;
+        border-collapse: separate;
+        margin-right: auto;
+        margin-left: auto;
+      ">
+      <!-- List of products  -->
+      <tbody>
+        <tr style="padding: 0px">
+          <td style="padding: 2.5%; width: 63%; vertical-align: middle; text-align: center;">
+            <form action="" class="product-form">
+              <select name="products" class="custom-select" multiple>
+                <option value="ROSES REGENCY TEACUP AND SAUCER">
+                  ROSES REGENCY TEACUP AND SAUCER
+                </option>
+                <option value="GREEN REGENCY TEACUP AND SAUCER">
+                  GREEN REGENCY TEACUP AND SAUCER
+                </option>
+                <option value="PINK REGENCY TEACUP AND SAUCER">
+                  PINK REGENCY TEACUP AND SAUCER
+                </option>
+                <option value="GARDENERS KNEELING PAD CUP OF TEA">
+                  GARDENERS KNEELING PAD CUP OF TEA
+                </option>
+                <option value="GARDENERS KNEELING PAD KEEP CALM">
+                  GARDENERS KNEELING PAD KEEP CALM
+                </option>
+                <option value="DOLLY GIRL LUNCH BOX">
+                  DOLLY GIRL LUNCH BOX</option>
+                <option value="SPACEBOY LUNCH BOX">
+                  SPACEBOY LUNCH BOX</option>
+                <option value="ALARM CLOCK BAKELIKE PINK">
+                  ALARM CLOCK BAKELIKE PINK
+                </option>
+                <option value="ALARM CLOCK BAKELIKE RED">
+                  ALARM CLOCK BAKELIKE RED</option>
+              </select>
+            </form>
+            <!-- <p id="output">"Test before click"</p> -->
+            <button type="button" class="btn-buy" id="buy-btn">Buy</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="sub-panel hidden">
+    <div class="cart">
+      <div class="products"></div>
+      <div class="total"></div>
+    </div>
+
+    <br>
+    <!-- Product Suggestions -->
+    <h2>Suggested Products</h2>
+    <div class="suggested-products"></div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
